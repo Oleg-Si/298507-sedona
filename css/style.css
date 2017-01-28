@@ -1,3 +1,9 @@
+html,
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-size: 14px;
     line-height: 21px;
@@ -19,3 +25,529 @@ h3 {
     font-weight: bold;
     font-family: "PT Sans", "Tahoma", sans-serif;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;   
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/*------------------------------header---------------------------*/
+.page_header {
+    min-width: 1200px;
+    min-height: 56px;
+}
+.nav ul {
+    width: 100%;
+    list-style: none;
+    min-height: 56px;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    margin: 0 auto;
+    width: 240px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav_information ,
+.nav_photo {
+    float: left;
+    min-height: 56px;
+}
+.nav_maps,
+.nav_hotel{
+    float: right;
+    min-height: 56px;
+}
+.nav_maps a,
+.nav_hotel a{
+    float: right;
+    margin-top: 20px;
+    margin-right: 73px;
+}
+.nav_information a,
+.nav_photo a {
+    float: left;
+    margin-top: 20px;
+    margin-left: 73px;
+}
+.logo {
+    height: 56px;
+    width: 240px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 480px
+}
+
+.logo a::before {
+    content: "";
+    display: table;
+    width: 138px;
+    height: 70px;
+    background: url('/img/background_logo.png') no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    z-index: 1;
+}
+.logo img {
+    position: relative;
+    z-index: 2;
+}
+/*---------------------------intro------------------------------*/
+.intro{
+    background: url('/img/background.jpg') no-repeat center 35%;
+}
+.text {
+    padding-top: 76px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 458px;
+}
+.mask {
+    width: 100%;
+    height: 57px;
+}
+.description {
+    background-color: #ffffff;
+}
+.description h2 {
+    width: 638px;
+    margin: 0 auto;
+    padding-top: 62px;
+    padding-bottom: 33px;
+    text-align: center;
+}
+.description p {
+    width: 490px;
+    margin: 0 auto;
+    padding-bottom: 56px;
+}
+/*--------------------------cause--------------------------------*/
+.causes .cause_real_town {
+    float: left;
+    width: 400px;
+    min-height: 256px;
+    text-align: center;
+    background-color: #81b3d2;
+}
+.cause_real_town h3,
+.cause_bridge h3 {
+    margin: 0;
+    padding-top: 55px;
+    padding-bottom: 30px
+}
+.cause_real_town p,
+.cause_bridge p {
+    width: 284px;
+    margin: 0 auto;
+    margin-top: 25px
+}
+.causes .real_town_photo {
+    float: right;
+    height: 256px;
+}
+.causes .cause_house,
+.causes .cause_food,
+.causes .cause_gift {
+    float: left;
+    width: 400px;
+    min-height: 330px;
+    text-align: center;
+}
+.causes .cause_bridge_photo {
+    float: left;
+    height: 256px;
+}
+.causes .cause_bridge {
+    float: right;
+    width: 400px;
+    min-height: 256px;
+    text-align: center;
+    background-color: #81b3d2;
+}
+.causes .cause_mini_area,
+.causes .cause_road,
+.causes .cause_tourist {
+    float: left;
+    width: 400px;
+    min-height: 256px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+.causes .cause_house img,
+.causes .cause_food img,
+.causes .cause_gift img {
+    margin-top: 60px;
+    margin-bottom: 33px;
+}
+.causes .cause_house h3,
+.causes .cause_food h3,
+.causes .cause_gift h3 {
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.causes .cause_house p,
+.causes .cause_food p,
+.causes .cause_gift p {
+    width: 290px;
+    margin: 0 auto;
+}
+.causes .cause_mini_area h3,
+.causes .cause_road h3,
+.causes .cause_tourist h3 {
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+.cause_mini_area p,
+.cause_road p,
+.cause_tourist p {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+/*--------------------------------------visit-------------------------------------*/
+.visit .visit_hotel {
+    height: 290px;
+}
+.visit_hotel h2 {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 55px;
+    margin-bottom: 33px;
+    text-transform: uppercase;
+}
+.visit_hotel p {
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 52px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+}
+.visit_hotel button {
+    display: block;
+    width: 568px;
+    height: 86px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    background-color: #766357;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*--------------------------------footer------------------------------------------*/
+.page_footer .visitsedona,
+.page_footer .social,
+.page_footer .creator {
+    width: 400px;
+    float: left;
+    min-height: 120px;
+}
+.page_footer .container {
+    min-height: 593px;
+    background: url('/img/maps.jpg') no-repeat center;
+}
+.page_footer .wrapper {
+    min-height: 120px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 78px;
+}
+.page_footer .social .social_btn {
+    float: left;
+    height: 48px;
+    margin-top: 36px;
+    margin-left: 6px;
+}
+.page_footer .social .social_btn:first-child{
+    margin-left: 125px;
+}
+.page_footer .creator img,
+.page_footer .creator p {
+    float: left;
+}
+.page_footer .visitsedona p {
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+}
+.page_footer .creator p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    margin-top: 52px;
+    margin-left: 100px;
+    margin-right: 7px;
+}
+.page_footer .creator img {
+    margin-top: 41px;
+}
+.page_footer .modal {
+    width: 568px;
+    min-height: 396px;
+    margin: 0 auto;
+    background-color: #ffffff
+}
+.page_footer .label {
+    width: 92px;
+    margin-left: 55px;
+    padding-top: 20px;
+    margin-right: 18px;
+    float: left;
+}
+.page_footer .label label {
+    display: block;
+    margin-top: 45px;
+}
+.page_footer .input {
+    width: 350px;
+    padding-top: 23px;
+    float: left;
+}
+.page_footer .input input {
+    display: block;
+    padding: 0;
+    margin-top: 30px;
+    height: 38px;
+    float: left;
+    border: none;
+    background-color: #f2f2f2;
+}
+.page_footer .input input:nth-of-type(1),
+.page_footer .input input:nth-of-type(2) {
+    width: 346px;
+}
+.page_footer .input input:nth-of-type(3),
+.page_footer .input input:nth-of-type(4) {
+    width: 116px;
+}
+.page_footer .input label {
+    float: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 27px;
+}
+.page_footer label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: bold;
+}
+.page_footer .search{
+    float: left;
+    margin-left: 55px;
+}
+.page_footer .search input{
+    display: block;
+    width: 458px;
+    height: 58px;
+    margin-top: 52px;
+    padding: 0;
+    border: none;
+    background-color: #81b3d2;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+/*-------------------------------------catalog---------------------------------*/
+.hostel_type {
+    background: url('/img/filter_background.jpg') no-repeat 50% 20%;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 216px;
+}
+.hostel_type .addition {
+    float: left;
+}
+.hostel_type .price {
+    float: right;
+    margin-top: 30px;
+    margin-right: 72px;
+    color: #ffffff
+}
+.hostel_type .addition .infrastructure,
+.hostel_type .addition .house_type{
+    width: 210px;
+    float: left;
+    height: 216px;
+}
+.addition .infrastructure p,
+.addition .house_type p {
+    margin-left: 73px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+.house_type .input,
+.infrastructure .input {
+    float: left;
+    min-height: 165px;
+    width: 85px
+}
+.house_type .input input,
+.infrastructure .input input {
+    float: left;
+    margin-left: 72px;
+}
+.house_type .label,
+.infrastructure .label{
+    float: right;
+    width: 125px;
+}
+.house_type .label label,
+.infrastructure .label label{
+    float: left;
+    width: 110px
+}
+
+/*----------------------------------result--------------------------------------*/
+.row {
+    border-bottom: 1px solid #e5e5e5;
+}
+.found {
+    min-height: 87px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.found b {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    font-weight: bold;
+    margin-left: 72px;
+}
+.found span {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    margin-left: 50px;
+}
+.found .arrow {
+    width: 60px;
+    float: right;
+    min-height: 30px;
+    
+}
+.found .sort_list {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    float: left;
+    margin-left: 8px;
+}
+.found .sort_list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.found .sort_list li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 32px;
+}
+.found .text {
+    margin: 0;
+    float: left;
+    height: 20px;
+    padding: 0;
+    width: 320px;
+}
+.found_hotel .house_photo {
+    float: left;
+    min-height: 150px;
+}
+.found_hotel .rating {
+    float: right;
+    margin-right: 72px;
+    margin-top: 30px;
+}
+.found_hotel .rating .stars {
+    margin-bottom: 47px;
+}
+.found_hotel .house_photo img {
+    float: left;
+    margin-left: 72px;
+    margin-top: 30px;
+}
+.found_hotel .house_description {
+    float: left;
+    width: 220px;                 
+    margin-top: 30px;
+    margin-left: 30px;
+    min-height: 92px
+    
+}
+.found_hotel .house_description h3 {
+    margin: 0;
+}
+.found_hotel .house_description span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 35px;
+}
+/*-------------------------------footer_catalog-----------------------------------*/
+.page_footer_catalog .visitsedona,
+.page_footer_catalog .social,
+.page_footer_catalog .creator {
+    width: 400px;
+    float: left;
+    min-height: 120px;
+}
+.page_footer_catalog .wrapper {
+    min-height: 120px;
+}
+.page_footer_catalog .social .social_btn {
+    float: left;
+    height: 48px;
+    margin-top: 36px;
+    margin-left: 6px;
+}
+.page_footer_catalog .social .social_btn:first-child{
+    margin-left: 125px;
+}
+.page_footer_catalog .creator img,
+.page_footer_catalog .creator p {
+    float: left;
+}
+.page_footer_catalog .visitsedona p {
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+}
+.page_footer_catalog .creator p {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "PT Sans", "Tahoma", sans-serif;
+    margin-top: 52px;
+    margin-left: 100px;
+    margin-right: 7px;
+}
+.page_footer_catalog .creator img {
+    margin-top: 41px;
+}
+/*---------------------------------------------------------------------------------*/

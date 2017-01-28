@@ -8,22 +8,24 @@
   <body>
     <header class="page_header">
       <div class="container">
-        <nav> 
-          <a>
-            <img src="img/logo.png" alt="Логотип" width="150"   height="75">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Логотип" width="67"   height="56">
           </a>
-          <ul>
-            <li>
+        </div>
+        <nav class="nav clearfix">
+          <ul class="clearfix">
+            <li class="nav_information">
               <a href="#">Информация</a>  
             </li>
-            <li>
+            <li class="nav_photo">
               <a href="#">Фото и видео</a>     
             </li>
-            <li>
-              <a href="#">Карта штата</a>     
-            </li>
-            <li>
+             <li class="nav_hotel">
               <a href="#">Гостинницы</a> 
+            </li>
+            <li class="nav_maps">
+              <a href="#">Карта штата</a>     
             </li>
           </ul>
         </nav>
@@ -31,15 +33,19 @@
     </header>
     <main class="container">
       <section class="intro">
-        <img src="img/sedona.png" alt="Welcome to Sedona" width="458" height="352">
-        <img src="img/mask.png" alt="" width="1200" height="57"> 
+        <div class="text">
+          <img src="img/sedona.png" alt="Welcome to Sedona" width="458" height="352">
+        </div>
+        <div class="mask">
+          <img src="img/mask.png" alt="" width="1200" height="57">
+        </div>
         <div class="description">
           <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
-      <section class="cause">
-        <div class="row">
+      <section class="causes">
+        <div class="row clearfix">
           <div class="cause_real_town">
             <h3>Настоящий городок</h3>
             <span class="number">— №1 —</span>
@@ -49,7 +55,7 @@
             <img src="img/town.jpg" alt="Городок" width="800" height="256">
           </div>
         </div>
-        <div class="row">
+        <div class="row clearfix">
           <div class="cause_house">
             <img src="img/house.png" alt="Домик" width="75" height="72">
             <h3>Жилье</h3>
@@ -66,17 +72,17 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row clearfix">
           <div class="cause_bridge_photo">
             <img src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
           </div>
-          <div class="right">
+          <div class="cause_bridge">
             <h3>Там есть мост дьявола</h3>
             <span class="number">— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row clearfix">
           <div class="cause_mini_area">
             <h3>Небольшая площадь</h3>
             <span class="number">— №3 —</span>
@@ -102,57 +108,54 @@
             Поиск гостиницы в Седоне
           </button>
         </div>
-        <div class="visit_maps">
-          <img src="img/maps.jpg" alt="Карта" width="1200" height="593">
-        </div>
-        <div class="modal">
-          <form action="#" method="post">
-            <label>
-              Дата заезда:
-              <input type="date" name="date_entry" id="entry">
-            </label>
-            <label>
-              Дата выезда:
-              <input type="date" name="date_exit" id="exit">
-            </label>
-            <label>
-              Взрослые:
-              <input type="number" name="num_adult" id="adult">
-            </label>
-            <label>
-              Дети:
-              <input type="number" name="num_kids" id="kids">
-            </label>
-            <input type="submit" value="Найти">
-          </form>
-        </div>
       </section>
     </main>
     <footer class="page_footer">
       <div class="container">
-        <div class="visitsedona">
-          <p>#visitsedona</p> 
+        <div class="modal clearfix">
+          <form action="#" method="post">
+            <div class="label clearfix">
+              <label for="entry">Дата заезда:</label>
+              <label for="exit">Дата выезда:</label>
+              <label for="adult">Взрослые:</label>
+            </div>
+            <div class="input clearfix">
+              <input type="date" name="date_entry" id="entry">
+              <input type="date" name="date_exit" id="exit">
+              <input type="number" name="num_adult" id="adult">
+              <label for="kids">Дети:</label>
+              <input type="number" name="num_kids" id="kids">
+            </div>
+            <div class="search">
+              <input type="submit" value="Найти">
+            </div>
+          </form>
         </div>
-        <div class="social">
-          <div class="social-btn-twitter">
-            <a href="http://twitter.com">
-              <img src="img/twitter.png" alt="Твиттер" width="46" height="48">
-            </a>
+        <div class="wrapper  clearfix">
+          <div class="visitsedona">
+            <p>#visitsedona</p> 
           </div>
-          <div class="social-btn-facebook">
-            <a href="http://facebook.com">
-              <img src="img/facebook.png" alt="Фейсбук" width="46"   height="48">
-            </a>
+          <div class="social">
+            <div class="social_btn social_btn_twitter">
+              <a href="http://twitter.com">
+                <img src="img/twitter.png" alt="Твиттер" width="46" height="48">
+              </a>
+            </div>
+            <div class="social_btn social_btn_facebook">
+              <a href="http://facebook.com">
+                <img src="img/facebook.png" alt="Фейсбук" width="46"   height="48">
+              </a>
+            </div>
+            <div class="social_btn social_btn_youtube">
+              <a href="http://youtube.com">
+                <img src="img/youtube.png" alt="Ютуб" width="46" height="48">
+              </a>
+            </div>
           </div>
-          <div class="social-btn-youtube">
-            <a href="http://youtube.com">
-              <img src="img/youtube.png" alt="Ютуб" width="46" height="48">
-            </a>
+          <div class="creator">
+            <p>website by</p>
+            <img src="img/htmlacademy.png" alt="htmlacademy" width="113"   height="39">
           </div>
-        </div>
-        <div class="creator">
-          <p>website by</p>
-          <img src="img/htmlacademy.png" alt="htmlacademy" width="113"   height="39">
         </div>
       </div>
     </footer>
