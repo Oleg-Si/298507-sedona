@@ -53,24 +53,20 @@ h3 {
     display: inline-block;
     vertical-align: middle;
 }
-.nav_information ,
-.nav_photo {
+.nav_info_foto {
     float: left;
     min-height: 56px;
 }
-.nav_maps,
-.nav_hotel{
+.nav_hotel_maps {
     float: right;
     min-height: 56px;
 }
-.nav_maps a,
-.nav_hotel a{
+.nav_hotel_maps a{
     float: right;
     margin-top: 20px;
     margin-right: 73px;
 }
-.nav_information a,
-.nav_photo a {
+.nav_info_foto a {
     float: left;
     margin-top: 20px;
     margin-left: 73px;
@@ -112,6 +108,7 @@ h3 {
 .mask {
     width: 100%;
     height: 57px;
+    background: url('/img/mask.png') no-repeat center;
 }
 .description {
     background-color: #ffffff;
@@ -152,13 +149,12 @@ h3 {
     float: right;
     height: 256px;
 }
-.causes .cause_house,
-.causes .cause_food,
-.causes .cause_gift {
+.causes_house_food_gift {
     float: left;
     width: 400px;
-    min-height: 330px;
+    min-height: 270px;
     text-align: center;
+    padding-top: 60px;
 }
 .causes .cause_bridge_photo {
     float: left;
@@ -171,54 +167,43 @@ h3 {
     text-align: center;
     background-color: #81b3d2;
 }
-.causes .cause_mini_area,
-.causes .cause_road,
-.causes .cause_tourist {
+.causes_area_road_tourist {
     float: left;
     width: 400px;
-    min-height: 256px;
+    min-height: 211px;
     text-align: center;
     background-color: #eeeeee;
+    padding-top: 45px;
 }
-.causes .cause_house img,
-.causes .cause_food img,
-.causes .cause_gift img {
-    margin-top: 60px;
+.causes_house_food_gift img {
     margin-bottom: 33px;
 }
-.causes .cause_house h3,
-.causes .cause_food h3,
-.causes .cause_gift h3 {
+.causes_house_food_gift h3 {
     margin: 0 auto;
     padding-bottom: 25px;
 }
-.causes .cause_house p,
-.causes .cause_food p,
-.causes .cause_gift p {
+.causes_house_food_gift p {
     width: 290px;
     margin: 0 auto;
 }
-.causes .cause_mini_area h3,
-.causes .cause_road h3,
-.causes .cause_tourist h3 {
-    margin-top: 45px;
+.causes_area_road_tourist h3 {
+    margin: 0;
     margin-bottom: 25px;
 }
-.cause_mini_area p,
-.cause_road p,
-.cause_tourist p {
+.causes_area_road_tourist p {
     width: 270px;
     margin: 0 auto;
     margin-top: 25px;
 }
 /*--------------------------------------visit-------------------------------------*/
 .visit .visit_hotel {
-    height: 290px;
+    min-height: 237px;
+    padding-top: 53px;
 }
 .visit_hotel h2 {
     width: 300px;
     margin: 0 auto;
-    padding-top: 55px;
+    
     margin-bottom: 33px;
     text-transform: uppercase;
 }
@@ -247,9 +232,7 @@ h3 {
 }
 
 /*--------------------------------footer------------------------------------------*/
-.page_footer .visitsedona,
-.page_footer .social,
-.page_footer .creator {
+.footer_item {
     width: 400px;
     float: left;
     min-height: 120px;
@@ -507,13 +490,6 @@ h3 {
     margin-right: 35px;
 }
 /*-------------------------------footer_catalog-----------------------------------*/
-.page_footer_catalog .visitsedona,
-.page_footer_catalog .social,
-.page_footer_catalog .creator {
-    width: 400px;
-    float: left;
-    min-height: 120px;
-}
 .page_footer_catalog .wrapper {
     min-height: 120px;
 }
