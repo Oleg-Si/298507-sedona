@@ -50,23 +50,21 @@ h3 {
 .nav li {
     margin: 0 auto;
     width: 240px;
-    display: inline-block;
-    vertical-align: middle;
 }
-.nav_info_foto {
+.nav_link {
     float: left;
     min-height: 56px;
 }
-.nav_hotel_maps {
+.nav_link_right {
     float: right;
     min-height: 56px;
 }
-.nav_hotel_maps a{
+.nav_link_right a{
     float: right;
     margin-top: 20px;
     margin-right: 73px;
 }
-.nav_info_foto a {
+.nav_link a {
     float: left;
     margin-top: 20px;
     margin-left: 73px;
@@ -149,7 +147,7 @@ h3 {
     float: right;
     height: 256px;
 }
-.causes_house_food_gift {
+.cause_img .causes_item {
     float: left;
     width: 400px;
     min-height: 270px;
@@ -167,7 +165,7 @@ h3 {
     text-align: center;
     background-color: #81b3d2;
 }
-.causes_area_road_tourist {
+.cause_text .causes_item {
     float: left;
     width: 400px;
     min-height: 211px;
@@ -175,22 +173,22 @@ h3 {
     background-color: #eeeeee;
     padding-top: 45px;
 }
-.causes_house_food_gift img {
+.cause_img .causes_item img {
     margin-bottom: 33px;
 }
-.causes_house_food_gift h3 {
+.cause_img .causes_item h3 {
     margin: 0 auto;
     padding-bottom: 25px;
 }
-.causes_house_food_gift p {
+.cause_img .causes_item p {
     width: 290px;
     margin: 0 auto;
 }
-.causes_area_road_tourist h3 {
+.cause_text .causes_item h3 {
     margin: 0;
     margin-bottom: 25px;
 }
-.causes_area_road_tourist p {
+.cause_text .causes_item p {
     width: 270px;
     margin: 0 auto;
     margin-top: 25px;
@@ -255,8 +253,8 @@ h3 {
 .page_footer .social .social_btn:first-child{
     margin-left: 125px;
 }
-.page_footer .creator img,
-.page_footer .creator p {
+.page_footer .copyright img,
+.page_footer .copyright p {
     float: left;
 }
 .page_footer .visitsedona p {
@@ -268,7 +266,7 @@ h3 {
     font-weight: bold;
     font-family: "PT Sans", "Tahoma", sans-serif;
 }
-.page_footer .creator p {
+.page_footer .copyright p {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "PT Sans", "Tahoma", sans-serif;
@@ -276,7 +274,7 @@ h3 {
     margin-left: 100px;
     margin-right: 7px;
 }
-.page_footer .creator img {
+.page_footer .copyright img {
     margin-top: 41px;
 }
 .page_footer .modal {
@@ -502,8 +500,8 @@ h3 {
 .page_footer_catalog .social .social_btn:first-child{
     margin-left: 125px;
 }
-.page_footer_catalog .creator img,
-.page_footer_catalog .creator p {
+.page_footer_catalog .copyright img,
+.page_footer_catalog .copyright p {
     float: left;
 }
 .page_footer_catalog .visitsedona p {
@@ -515,7 +513,7 @@ h3 {
     font-weight: bold;
     font-family: "PT Sans", "Tahoma", sans-serif;
 }
-.page_footer_catalog .creator p {
+.page_footer_catalog .copyright p {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "PT Sans", "Tahoma", sans-serif;
@@ -523,7 +521,7 @@ h3 {
     margin-left: 100px;
     margin-right: 7px;
 }
-.page_footer_catalog .creator img {
+.page_footer_catalog .copyright img {
     margin-top: 41px;
 }
 /*---------------------------------------------------------------------------------*/
