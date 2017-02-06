@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -14,7 +15,7 @@
           </a>
         </div>
         <nav class="nav">
-          <ul class="clearfix">
+          <ul>
             <li class="nav_link">
               <a href="#">Информация</a>  
             </li>
@@ -22,16 +23,16 @@
               <a href="#">Фото и видео</a>     
             </li>
              <li class="nav_link nav_link_right">
-              <a href="#">Гостинницы</a> 
+              <a href="#">Карта штата</a> 
             </li>
-            <li class="nav_link nav_link_right">
-              <a href="#">Карта штата</a>     
+            <li class="nav_link nav_link_right select_catalog">
+              <a href="#">Гостиницы</a>     
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main>
       <div class="hostel_type clearfix">
         <div class="addition clearfix">
           <div class="infrastructure clearfix">
@@ -75,8 +76,8 @@
           <input type="submit" value="Показать">
         </div>
       </div>
-      <section class="result clearfix">
-        <div class="row found clearfix">
+      <section class="result">
+        <div class="row found">
           <div class="text">
             <b>Найдено: 3</b>
             <span>Сортировка:</span>
@@ -90,7 +91,7 @@
           </div>
           <div class="arrow"></div>
         </div>
-        <div class="row found_hotel clearfix">
+        <div class="row found_hotel">
           <div class="house_photo clearfix">
             <img src="img/amara.jpg" alt="amara" width="135" height="90">
             <div class="house_description">
@@ -108,7 +109,7 @@
             <span>Рейтинг: 8,5</span>
           </div>
         </div>
-        <div class="row found_hotel clearfix">
+        <div class="row found_hotel">
           <div class="house_photo clearfix">
             <img src="img/desert.jpg" alt="amara" width="135" height="90">
             <div class="house_description">
@@ -126,7 +127,7 @@
             <span>Рейтинг: 8,9</span>
           </div>
         </div>
-        <div class="row found_hotel clearfix">
+        <div class="row found_hotel">
           <div class="house_photo clearfix">
             <img src="img/villas.jpg" alt="amara" width="135" height="90">
             <div class="house_description">
@@ -146,33 +147,25 @@
         </div>
       </section>
     </main>
-    <footer class="page_footer_catalog">
-      <div class="container">
-        <div class="wrapper  clearfix">
-          <div class="visitsedona footer_item">
-            <p>#visitsedona</p> 
+    <footer class="page_footer">
+      <div class="row wrapper">
+        <div class="visitsedona footer_item">
+          <p>#visitsedona</p> 
+        </div>
+        <div class="social footer_item">
+          <div class="social_btn social_btn_twitter">
+            <a href="http://twitter.com"></a>
           </div>
-          <div class="social footer_item">
-            <div class="social_btn social_btn_twitter">
-              <a href="http://twitter.com">
-                <img src="img/twitter.png" alt="Твиттер" width="46" height="48">
-              </a>
-            </div>
-            <div class="social_btn social_btn_facebook">
-              <a href="http://facebook.com">
-                <img src="img/facebook.png" alt="Фейсбук" width="46"   height="48">
-              </a>
-            </div>
-            <div class="social_btn social_btn_youtube">
-              <a href="http://youtube.com">
-                <img src="img/youtube.png" alt="Ютуб" width="46" height="48">
-              </a>
-            </div>
+          <div class="social_btn social_btn_facebook">
+            <a href="http://facebook.com"></a>
           </div>
-          <div class="copyright footer_item">
-            <p>website by</p>
-            <img src="img/htmlacademy.png" alt="htmlacademy" width="113"   height="39">
+          <div class="social_btn social_btn_youtube">
+            <a href="http://youtube.com"></a>
           </div>
+        </div>
+        <div class="copyright footer_item">
+          <p>website by</p>
+          <a href="http://htmlacademy.ru"></a>
         </div>
       </div>
     </footer>

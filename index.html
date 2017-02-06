@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -14,7 +15,7 @@
           </a>
         </div>
         <nav class="nav">
-          <ul class="clearfix">
+          <ul>
             <li class="nav_link">
               <a href="#">Информация</a>  
             </li>
@@ -22,77 +23,76 @@
               <a href="#">Фото и видео</a>     
             </li>
              <li class="nav_link nav_link_right">
-              <a href="#">Гостинницы</a> 
+              <a href="#">Карта штата</a> 
             </li>
             <li class="nav_link nav_link_right">
-              <a href="#">Карта штата</a>     
+              <a href="#">Гостиницы</a>     
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="container">
+    <main class="main">
       <section class="intro">
         <div class="text">
           <img src="img/sedona.png" alt="Welcome to Sedona" width="458" height="352">
         </div>
-        <div class="mask"></div>
         <div class="description">
           <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
       <section class="causes">
-        <div class="row clearfix">
+        <div class="row">
           <div class="cause_real_town">
-            <h3>Настоящий городок</h3>
+            <h3>Настоящий<br>городок</h3>
             <span class="number">— №1 —</span>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            <p>Седона &mdash; не аттракцион для туристов,<br>там течет своя жизнь</p>
           </div>
           <div class="real_town_photo">
             <img src="img/town.jpg" alt="Городок" width="800" height="256">
           </div>
         </div>
-        <div class="row cause_img clearfix">
+        <div class="row cause_img">
           <div class="cause_house causes_item">
-            <img src="img/house.png" alt="Домик" width="75" height="72">
+            <div class="photo"></div>
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="cause_food causes_item">
-            <img src="img/burger.png" alt="Бургер" width="74" height="70">
+            <div class="photo"></div>
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="cause_gift causes_item">
-            <img src="img/gift.png" alt="Подарок" width="64" height="76">
+            <div class="photo"></div>
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="row clearfix">
+        <div class="row">
           <div class="cause_bridge_photo">
             <img src="img/bridge.jpg" alt="Мост дьявола" width="800" height="256">
           </div>
           <div class="cause_bridge">
-            <h3>Там есть мост дьявола</h3>
+            <h3>Там есть<br>мост дьявола</h3>
             <span class="number">— №2 —</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
           </div>
         </div>
-        <div class="row cause_text clearfix">
+        <div class="row cause_text">
           <div class="cause_mini_area causes_item">
-            <h3>Небольшая площадь</h3>
+            <h3>Небольшая<br>площадь</h3>
             <span class="number">— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="cause_road causes_item">
-            <h3>Красивая дорога</h3>
+            <h3>Красивая<br>дорога</h3>
             <span class="number">— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="cause_tourist causes_item">
-            <h3>Мало туристов</h3>
+            <h3>Мало<br>туристов</h3>
             <span class="number">— №5 —</span>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </div>
@@ -101,59 +101,55 @@
       <section class="visit">
         <div class="visit_hotel">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="btn" id="shearch" type="button">
             Поиск гостиницы в Седоне
           </button>
         </div>
       </section>
-    </main>
-    <footer class="page_footer">
-      <div class="container">
-        <div class="modal clearfix">
-          <form action="#" method="post">
-            <div class="label clearfix">
-              <label for="entry">Дата заезда:</label>
-              <label for="exit">Дата выезда:</label>
-              <label for="adult">Взрослые:</label>
-            </div>
-            <div class="input clearfix">
-              <input type="date" name="date_entry" id="entry">
-              <input type="date" name="date_exit" id="exit">
-              <input type="number" name="num_adult" id="adult">
-              <label for="kids">Дети:</label>
-              <input type="number" name="num_kids" id="kids">
-            </div>
-            <div class="search">
-              <input type="submit" value="Найти">
-            </div>
-          </form>
+      <div class="page_modal">
+        <div class="container">
+          <div class="modal clearfix">
+            <form action="#" method="post" class="clearfix">
+              <div class="label clearfix">
+                <label for="entry">Дата заезда:</label><div class="calendar"></div>
+                <label for="exit">Дата выезда:</label><div class="calendar_2"></div>
+                <label for="adult">Взрослые:</label>
+              </div>
+              <div class="input clearfix">
+                <input type="text" name="date_entry" id="entry" placeholder="24 апреля 2017">
+                <input type="text" name="date_exit" id="exit" placeholder="4 июля 2017">
+                <input type="number" name="num_adult" id="adult" placeholder="2">
+                <label for="kids">Дети:</label>
+                <input type="number" name="num_kids" id="kids" placeholder="0">
+              </div>
+              <div class="search">
+                <input type="submit" value="Найти">
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="wrapper clearfix">
-          <div class="visitsedona footer_item">
-            <p>#visitsedona</p> 
+      </div>
+    </main>
+    <footer class="page_footer page_footer_index">
+      <div class="row wrapper">
+        <div class="visitsedona footer_item">
+          <p>#visitsedona</p> 
+        </div>
+        <div class="social footer_item">
+          <div class="social_btn social_btn_twitter">
+            <a href="http://twitter.com"></a>
           </div>
-          <div class="social footer_item">
-            <div class="social_btn social_btn_twitter">
-              <a href="http://twitter.com">
-                <img src="img/twitter.png" alt="Твиттер" width="46" height="48">
-              </a>
-            </div>
-            <div class="social_btn social_btn_facebook">
-              <a href="http://facebook.com">
-                <img src="img/facebook.png" alt="Фейсбук" width="46"   height="48">
-              </a>
-            </div>
-            <div class="social_btn social_btn_youtube">
-              <a href="http://youtube.com">
-                <img src="img/youtube.png" alt="Ютуб" width="46" height="48">
-              </a>
-            </div>
+          <div class="social_btn social_btn_facebook">
+            <a href="http://facebook.com"></a>
           </div>
-          <div class="copyright footer_item">
-            <p>website by</p>
-            <img src="img/htmlacademy.png" alt="htmlacademy" width="113"   height="39">
+          <div class="social_btn social_btn_youtube">
+            <a href="http://youtube.com"></a>
           </div>
+        </div>
+        <div class="copyright footer_item">
+          <p>website by</p>
+          <a href="http://htmlacademy.ru"></a>
         </div>
       </div>
     </footer>
