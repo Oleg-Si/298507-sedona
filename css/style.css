@@ -64,6 +64,7 @@ img {
 .nav ul {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     list-style: none;
     min-height: 56px;
@@ -245,6 +246,7 @@ img {
 .cause_img .causes_item h3 {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 21px;
+    width: 150px;
     line-height: 21px;
     text-transform: uppercase;
     margin: 0 auto;
@@ -357,6 +359,11 @@ img {
     min-height: 120px;
     background-color: rgba(255, 255, 255, 0.9);
 }
+.social {
+    padding-left: 124px;
+    padding-right: 70px;
+    box-sizing: border-box
+}
 .page_footer .social_btn {
     float: left;
     height: 48px;
@@ -370,9 +377,6 @@ img {
 }
 .page_footer .social_btn:active {
     background-color: #5496bd;
-}
-.page_footer .social_btn:first-child {
-    margin-left: 124px; 
 }
 .page_footer .social_btn a{
     display: block;
@@ -652,7 +656,6 @@ img {
 .hostel_type .addition .house_type{
     width: 253px;
     float: left;
-    height: 216px;
     padding-left: 72px;
     box-sizing: border-box;
 }

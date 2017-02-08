@@ -78,22 +78,24 @@
         </div>
         <div class="price">
           <p>Стоимость в сутки (Р):</p>
-          <div class="price_controls">
-            <label class="min_price">от 
-              <input type="text" name="min_price" value="0">
-            </label>
-            <label class="max_price">до
-              <input type="text" name="max_price" value="3000">
-            </label>
-          </div>
-          <div class="range_controls">
-            <div class="scale">
-              <div class="bar"></div>
+          <form action="#" method="post">
+            <div class="price_controls">
+              <label class="min_price">от 
+                <input type="text" name="min_price" value="0">
+              </label>
+              <label class="max_price">до
+               <input type="text" name="max_price" value="3000">
+              </label>
             </div>
-            <div class="range_toggle range_toggle_min"></div>
-            <div class="range_toggle range_toggle_max"></div>
-          </div>
-          <button class="btn_transparent" type="submit">Показать</button>
+            <div class="range_controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range_toggle range_toggle_min"></div>
+              <div class="range_toggle range_toggle_max"></div>
+            </div>
+            <button class="btn_transparent" type="submit">Показать</button>
+          </form>
         </div>
       </div>
       <section class="result">
