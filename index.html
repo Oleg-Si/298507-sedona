@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page_header">
       <div class="container">
         <div class="logo">
-          <a href="index.html">
+          <a>
             <img src="img/logo.png" alt="Логотип" width="67"   height="56">
           </a>
         </div>
@@ -26,7 +26,7 @@
               <a href="#">Карта штата</a> 
             </li>
             <li class="nav_link nav_link_right">
-              <a href="#">Гостиницы</a>     
+              <a href="catalog.html">Гостиницы</a>     
             </li>
           </ul>
         </nav>
@@ -38,16 +38,16 @@
           <img src="img/sedona.png" alt="Welcome to Sedona" width="458" height="352">
         </div>
         <div class="description">
-          <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
+          <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего! </h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
       <section class="causes">
         <div class="row">
           <div class="cause_real_town">
-            <h3>Настоящий<br>городок</h3>
-            <span class="number">— №1 —</span>
-            <p>Седона &mdash; не аттракцион для туристов,<br>там течет своя жизнь</p>
+            <h3>Настоящий городок</h3>
+            <span class="number">&mdash; №1 &mdash;</span>
+            <p>Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="real_town_photo">
             <img src="img/town.jpg" alt="Городок" width="800" height="256">
@@ -76,24 +76,24 @@
           </div>
           <div class="cause_bridge">
             <h3>Там есть<br>мост дьявола</h3>
-            <span class="number">— №2 —</span>
-            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+            <span class="number">&mdash; №2 &mdash;</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <div class="row cause_text">
           <div class="cause_mini_area causes_item">
-            <h3>Небольшая<br>площадь</h3>
-            <span class="number">— №3 —</span>
+            <h3>Небольшая площадь</h3>
+            <span class="number">&mdash; №3 &mdash;</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="cause_road causes_item">
-            <h3>Красивая<br>дорога</h3>
-            <span class="number">— №4 —</span>
+            <h3>Красивая дорога</h3>
+            <span class="number">&mdash; №4 &mdash;</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="cause_tourist causes_item">
-            <h3>Мало<br>туристов</h3>
-            <span class="number">— №5 —</span>
+            <h3>Мало туристов</h3>
+            <span class="number">&mdash; №5 &mdash;</span>
             <p>Большинство едет в Гранд каньон и толпится там</p>
           </div>
         </div>
@@ -108,26 +108,28 @@
         </div>
       </section>
       <div class="page_modal">
-        <div class="container">
-          <div class="modal clearfix">
-            <form action="#" method="post" class="clearfix">
-              <div class="label clearfix">
-                <label for="entry">Дата заезда:</label><div class="calendar"></div>
-                <label for="exit">Дата выезда:</label><div class="calendar_2"></div>
-                <label for="adult">Взрослые:</label>
-              </div>
-              <div class="input clearfix">
-                <input type="text" name="date_entry" id="entry" placeholder="24 апреля 2017">
-                <input type="text" name="date_exit" id="exit" placeholder="4 июля 2017">
-                <input type="number" name="num_adult" id="adult" placeholder="2">
-                <label for="kids">Дети:</label>
-                <input type="number" name="num_kids" id="kids" placeholder="0">
-              </div>
-              <div class="search">
-                <input type="submit" value="Найти">
-              </div>
-            </form>
-          </div>
+        <div class="modal clearfix">
+          <form action="#" method="post" class="clearfix">
+            <div class="label clearfix">
+              <label for="entry">Дата заезда:</label><div class="calendar"></div>
+              <label for="exit">Дата выезда:</label><div class="calendar_2"></div>
+              <label for="adult">Взрослые:</label>
+            </div>
+            <div class="input clearfix">
+              <input type="text" name="date_entry" id="entry" placeholder="24 апреля 2017">
+              <input type="text" name="date_exit" id="exit" placeholder="4 июля 2017">
+              <button type="submit" class="button_delete">-</button>
+              <input type="text" name="num_adult" id="adult" placeholder="2">
+              <button type="submit" class="button_add">+</button>
+              <label for="kids">Дети:</label>
+              <button type="submit" class="button_delete">-</button>
+              <input type="text" name="num_kids" id="kids" placeholder="0">
+             <button type="submit" class="button_add">+</button>
+            </div>
+            <div class="search">
+              <input type="submit" value="Найти">
+            </div>
+          </form>
         </div>
       </div>
     </main>
