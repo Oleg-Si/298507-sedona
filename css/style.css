@@ -98,7 +98,7 @@ img {
 }
 .nav_link a {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     margin-top: 14px;
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-weight: bold;
@@ -718,9 +718,15 @@ img {
 .house_type input[type="checkbox"]:checked + .checkbox-indicator {
     background-position: -82px -529px;
 }
-.infrastructure input[type="checkbox"]:checked,
-.house_type input[type="checkbox"]:checked {
-    background-position: -82px -529px;
+.infrastructure input[type="checkbox"]:disabled + .checkbox-indicator,
+.house_type input[type="checkbox"]:disabled + .checkbox-indicator{
+    background: url("../img/sprite.png");
+    background-position: -20px -608px;
+}
+.infrastructure input[type="checkbox"]:disabled:checked + .checkbox-indicator,
+.house_type input[type="checkbox"]:disabled:checked + .checkbox-indicator{
+    background: url("../img/sprite.png");
+    background-position: -20px -566px;
 }
 .hostel_type .price {
     float: right;
@@ -1018,6 +1024,7 @@ img {
 }
 .found_hotel .house_description span {
     display: inline-block;
+    vertical-align: top;
     width: 113px;
     margin-top: 7px;
     margin-bottom: 14px;
@@ -1030,6 +1037,7 @@ img {
 .house_description a:nth-of-type(2),
 .house_description a:nth-of-type(3) {
     display: inline-block;
+    vertical-align: top;
     min-height: 27px;
     font-size: 14px;
     line-height: 21px;
