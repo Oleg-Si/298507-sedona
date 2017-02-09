@@ -142,7 +142,7 @@ img {
 }
 /*---------------------------intro------------------------------*/
 .main {
-    background: url("../img/background.jpg") no-repeat center -56px;
+    background: #e4f1f9 url("../img/background.jpg") no-repeat center -56px;
     position: relative;
 }
 .main:after {
@@ -254,7 +254,7 @@ img {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -14px -434px;
 }
-.cause_img .causes_item h3 {
+.cause_img h3 {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 21px;
     width: 150px;
@@ -263,7 +263,7 @@ img {
     margin: 0 auto;
     padding-bottom: 25px;
 }
-.cause_img .causes_item p {
+.cause_img p {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -292,7 +292,7 @@ img {
     padding-top: 47px;
     box-sizing: border-box;
 }
-.cause_text .causes_item h3 {
+.cause_text h3 {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 21px;
     line-height: 21px;
@@ -302,7 +302,7 @@ img {
     width: 160px;
     
 }
-.cause_text .causes_item p {
+.cause_text p {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -312,7 +312,7 @@ img {
     margin: 0 auto;
     margin-top: 21px;
 }
-.cause_text .causes_item .number {
+.cause_text .number {
     font-family: "PT Sans", "Tahoma", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -390,38 +390,38 @@ img {
 .page_footer .social_btn:active {
     background-color: #5496bd;
 }
-.page_footer .social_btn a{
+.social_btn a{
     display: block;
     width: 25px;
     height: 25px;
     padding: 10px;
     padding-top: 13px;
 }
-.page_footer .social_btn_facebook a {
+.social_btn_facebook a {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -86px -600px;
 }
-.page_footer .social_btn_facebook a:active {
+.social_btn_facebook a:active {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -65px -814px;
 }
-.page_footer .social_btn_twitter a {
+.social_btn_twitter a {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -5px -712px;
 }
-.page_footer .social_btn_twitter a:active {
+.social_btn_twitter a:active {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -42px -717px;
 }
-.page_footer .social_btn_youtube a {
+.social_btn_youtube a {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -7px -677px;
 }
-.page_footer .social_btn_youtube a:active {
+.social_btn_youtube a:active {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -47px -682px;
 }
-.page_footer .visitsedona p {
+.visitsedona p {
     width: 140px;
     margin: 0 auto;
     margin-top: 48px;
@@ -432,11 +432,11 @@ img {
     color: #000000;
     text-align: center;
 }
-.page_footer .copyright a,
-.page_footer .copyright p {
+.copyright a,
+.copyright p {
     float: left;
 }
-.page_footer .copyright p {
+.copyright p {
     font-size: 14px;
     text-transform: uppercase;
     font-family: "PT Sans", "Tahoma", sans-serif;
@@ -444,7 +444,7 @@ img {
     margin-left: 103px;
     margin-right: 8px;
 }
-.page_footer .copyright a {
+.copyright a {
     display: block;
     width: 125px;
     height: 45px;
@@ -452,11 +452,11 @@ img {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -20px 4px;
 }
-.page_footer .copyright a:hover {
+.copyright a:hover {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -20px -114px;
 }
-.page_footer .copyright a:active {
+.copyright a:active {
     background: url(../img/sprite.png) no-repeat center;
     background-position: -20px -55px;
 }
@@ -481,7 +481,7 @@ img {
     margin-right: 18px;
     float: left;
 }
-.page_modal .label label {
+.label label {
     display: block;
     margin-top: 41px;
 }
@@ -491,7 +491,7 @@ img {
     float: left;
     margin-left: 2px;
 }
-.page_modal .input input {
+.input input {
     display: block;
     padding: 0;
     margin-top: 29px;
@@ -502,11 +502,11 @@ img {
     font-weight: bold;
     font: inherit;
 }
-.page_modal .input input:focus {
+.input input:focus {
     background-color: #ffffff;
     outline-color: #e5e5e5;
 }
-.page_modal .input input:hover {
+.input input:hover {
     background-color: #ebebeb;
 }
 .modal ::-webkit-input-placeholder {
@@ -533,8 +533,8 @@ img {
     text-transform: uppercase;
     font-size: 14px;
 }
-.page_modal .input input:nth-of-type(1),
-.page_modal .input input:nth-of-type(2) {
+.input input:nth-of-type(1),
+.input input:nth-of-type(2) {
     width: 346px;
     padding-left: 12px;
     box-sizing: border-box;
@@ -564,14 +564,14 @@ img {
 .modal .calendar_2::after {
     top: 127px;
 }
-.page_modal .input input:nth-of-type(3),
-.page_modal .input input:nth-of-type(4) {
+.input input:nth-of-type(3),
+.input input:nth-of-type(4) {
     width: 43px;
     margin-top: 30px;
     padding-left: 18px;
     box-sizing: border-box;
 }
-.modal .input button {
+.input button {
     float: left;
     width: 35px;
     margin-top: 30px;
@@ -579,7 +579,7 @@ img {
     border: none;
     background-color: #f2f2f2;
 }
-.modal .input .button_add {
+.input .button_add {
     font-size: 22px;
     font-weight: 700;
     padding-bottom: 3px;
@@ -587,7 +587,7 @@ img {
     padding-right: 15px;
     box-sizing: border-box;
 }
-.modal .input .button_delete {
+.input .button_delete {
     font-size: 30px;
     font-weight: 500;
     padding: 0;
@@ -596,20 +596,20 @@ img {
     padding-left: 10px;
     box-sizing: border-box;
 }
-.modal .input .button_add:hover,
-.modal .input .button_delete:hover {
+.input .button_add:hover,
+.input .button_delete:hover {
     color: #000000;
 }
-.modal .input .button_add:active,
-.modal .input .button_delete:active {
+.input .button_add:active,
+.input .button_delete:active {
     color: #81b3d2;
     outline-color: transparent;
 }
-.modal .input .button_add:focus,
-.modal .input .button_delete:focus {
+.input .button_add:focus,
+.input .button_delete:focus {
     outline-color: transparent;
 }
-.page_modal .input label {
+.input label {
     width: 50px;
     text-align: center;
     float: left;
@@ -629,7 +629,7 @@ img {
     margin-left: 55px;
     margin-top: 2px;
 }
-.page_modal .search input{
+.search input{
     display: block;
     width: 458px;
     height: 58px;
@@ -643,10 +643,10 @@ img {
     font-weight: bold;
     color: #ffffff;   
 }
-.page_modal .search input:hover {
+.search input:hover {
     background-color: #669ec0;
 }
-.page_modal .search input:active {
+.search input:active {
     background-color: #5496bd;
     color: #88b6d1;
 }
@@ -664,15 +664,15 @@ img {
 .hostel_type .addition {
     float: left;
 }
-.hostel_type .addition .infrastructure,
-.hostel_type .addition .house_type{
+.addition .infrastructure,
+.addition .house_type{
     width: 253px;
     float: left;
     padding-left: 72px;
     box-sizing: border-box;
 }
-.addition .infrastructure p,
-.addition .house_type p {
+.infrastructure p,
+.house_type p {
     margin-top: 27px;
     margin-bottom: 26px;
     font-size: 16px;
@@ -912,7 +912,7 @@ img {
 .found .sort_list {
     width: 700px;
 }
-.found .sort_list ul {
+.found ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -940,7 +940,7 @@ img {
     color: #000000;
     border-bottom: none;
 }
-.sort_list .active a {
+.active a {
     color: #81b3d2;
     border: none;
 }
@@ -997,7 +997,7 @@ img {
     padding-top: 3px;
     box-sizing: border-box;
 }
-.found_hotel .house_photo img {
+.house_photo img {
     float: left;
     margin-left: 72px;
     margin-top: 30px;
@@ -1024,7 +1024,7 @@ img {
 .house_description a:active:first-child {
     color: #cacaca;
 }
-.found_hotel .house_description span {
+.house_description span {
     display: inline-block;
     vertical-align: top;
     width: 113px;
