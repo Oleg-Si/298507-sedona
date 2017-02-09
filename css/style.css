@@ -180,9 +180,10 @@ img {
     line-height: 26px;
     text-transform: uppercase;
     color: #333333;
-    width: 490px;
+    width: 550px;
+    padding-left: 60px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 51px;
 }
 /*--------------------------cause--------------------------------*/
 .causes .cause_real_town {
@@ -372,7 +373,7 @@ img {
     background-color: rgba(255, 255, 255, 0.9);
 }
 .social {
-    padding-left: 124px;
+    padding-left: 118px;
     padding-right: 70px;
     box-sizing: border-box
 }
@@ -475,15 +476,17 @@ img {
     box-shadow: 7px 5px 15px rgba(0, 1, 1, 0.15);
 }
 .page_modal .label {
-    width: 92px;
+    width: 110px;
     margin-left: 55px;
     padding-top: 19px;
-    margin-right: 18px;
     float: left;
 }
 .label label {
     display: block;
     margin-top: 41px;
+}
+.label label:last-child {
+    margin-top: 43px;
 }
 .page_modal .input {
     width: 350px;
@@ -509,26 +512,26 @@ img {
 .input input:hover {
     background-color: #ebebeb;
 }
-.modal ::-webkit-input-placeholder {
-    color:#000;
+input::-webkit-input-placeholder {
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
-.modal ::-moz-placeholder {
-    color:#000;
+input::-moz-placeholder {
+    color: rgba(0, 0, 0, 1);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
-.modal :-moz-placeholder {
-    color:#000;
+input:-moz-placeholder {
+    color: rgba(0, 0, 0, 1);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
-.modal :-ms-input-placeholder {
-    color:#000;
+input:-ms-input-placeholder {
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
@@ -547,8 +550,8 @@ img {
     background: url(../img/sprite.png);
     background-position: -57px -611px;
     position: absolute;
-    left: 475px;
-    top: 60px;
+    left: 478px;
+    top: 61px;
     z-index: 1;
 }
 .modal .calendar:hover::after,
@@ -562,7 +565,7 @@ img {
     background-position: -15px -648px;
 }
 .modal .calendar_2::after {
-    top: 127px;
+    top: 128px;
 }
 .input input:nth-of-type(3),
 .input input:nth-of-type(4) {
@@ -582,18 +585,16 @@ img {
 .input .button_add {
     font-size: 22px;
     font-weight: 700;
-    padding-bottom: 3px;
     color: #a9a9a9;
-    padding-right: 15px;
+    padding-right: 7px;
     box-sizing: border-box;
 }
 .input .button_delete {
     font-size: 30px;
     font-weight: 500;
     padding: 0;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     color: #a9a9a9;
-    padding-left: 10px;
     box-sizing: border-box;
 }
 .input .button_add:hover,
@@ -657,7 +658,7 @@ img {
 }
 /*-------------------------------------catalog---------------------------------*/
 .hostel_type {
-    background: url("../img/filter_background.jpg") no-repeat 50% -55px;
+    background: #e4f1f9 url("../img/filter_background.jpg") no-repeat 50% -55px;
     width: 100%;
     min-height: 217px;
 }
@@ -682,7 +683,6 @@ img {
     font-weight: bold;
     color: #ffffff;
 }
-
 .infrastructure label,
 .house_type label {
     display: block;
