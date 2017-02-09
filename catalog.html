@@ -34,9 +34,9 @@
     </header>
     <main>
       <div class="hostel_type clearfix">
-        <div class="addition clearfix">
-          <div class="infrastructure">
-            <form action="#" method="post">
+        <form action="#" method="post">
+          <div class="addition clearfix">
+            <div class="infrastructure">
               <p>Инфраструктура:</p>
               <label>
                 <input type="checkbox" name="and_pool" id="pool" checked>
@@ -45,18 +45,16 @@
               </label>
               <label>
                 <input type="checkbox" name="and_parking" id="parking">
-                  <span class="checkbox-indicator"></span>
-                  Парковка
+                <span class="checkbox-indicator"></span>
+                Парковка
               </label>
               <label>
                 <input type="checkbox" name="and_wifi" id="wifi">
                 <span class="checkbox-indicator"></span>
                 Wi-fi
               </label>
-            </form>
-          </div>
-          <div class="house_type">
-            <form action="#" method="post">
+            </div>
+            <div class="house_type">
               <p>Тип жилья:</p>
               <label>
                 <input type="checkbox" name="and_hotel" id="hotel" checked>
@@ -73,18 +71,16 @@
                 <span class="checkbox-indicator"></span>
                 Апартаменты
               </label>
-            </form>  
+            </div>
           </div>
-        </div>
-        <div class="price">
-          <p>Стоимость в сутки (Р):</p>
-          <form action="#" method="post">
+          <div class="price">
+            <p>Стоимость в сутки (Р):</p>
             <div class="price_controls">
               <label class="min_price">от 
                 <input type="text" name="min_price" value="0">
               </label>
               <label class="max_price">до
-               <input type="text" name="max_price" value="3000">
+                <input type="text" name="max_price" value="3000">
               </label>
             </div>
             <div class="range_controls">
@@ -95,8 +91,8 @@
               <div class="range_toggle range_toggle_max"></div>
             </div>
             <button class="btn_transparent" type="submit">Показать</button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
       <section class="result">
         <div class="row found">
