@@ -235,25 +235,40 @@ img {
     width: 400px;
     min-height: 273px;
     text-align: center;
-    padding-top: 57px;
+    padding-top: 160px;
+    padding-bottom: 82px;
+    position: relative;
+    box-sizing: border-box;
 }
-.causes_item .photo {
-    margin: 0 auto;
-    margin-bottom: 27px;
+.cause_img .causes_item:nth-of-type(1)::before {
+    content: "";
     width: 75px;
     height: 76px;
-}
-.cause_house .photo {
+    position: absolute;
     background: url(../img/sprite.png) no-repeat center;
     background-position: -20px -211px;
+    left: 162px;
+    top: 57px;
 }
-.cause_food .photo {
+.cause_img .causes_item:nth-of-type(2)::before {
+    content: "";
+    width: 75px;
+    height: 76px;
+    position: absolute;
     background: url(../img/sprite.png) no-repeat center;
     background-position: -19px -302px;
+    left: 162px;
+    top: 57px;
 }
-.cause_gift .photo {
+.cause_img .causes_item:nth-of-type(3)::before {
+    content: "";
+    width: 75px;
+    height: 76px;
+    position: absolute;
     background: url(../img/sprite.png) no-repeat center;
     background-position: -14px -434px;
+    left: 162px;
+    top: 57px;
 }
 .cause_img h3 {
     font-family: "PT Sans", "Tahoma", sans-serif;
@@ -523,12 +538,14 @@ input::-moz-placeholder {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
+    opacity: 1;
 }
 input:-moz-placeholder {
     color: rgba(0, 0, 0, 1);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
+    opacity: 1;
 }
 input:-ms-input-placeholder {
     color: #000000;
