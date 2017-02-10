@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page_header">
@@ -99,7 +99,7 @@
         <div class="visit_hotel">
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="btn" id="shearch" type="button">
+          <button class="btn open_modal" id="shearch" type="button">
             Поиск гостиницы в Седоне
           </button>
         </div>
@@ -113,8 +113,8 @@
               <label for="adult">Взрослые:</label>
             </div>
             <div class="input clearfix">
-              <input type="text" name="date_entry" id="entry" placeholder="24 апреля 2017">
-              <input type="text" name="date_exit" id="exit" placeholder="4 июля 2017">
+              <input type="text" name="date_entry" id="entry" placeholder="24 апреля 2017" required>
+              <input type="text" name="date_exit" id="exit" placeholder="4 июля 2017" required>
               <button type="button" class="button_delete">-</button>
               <input type="text" name="num_adult" id="adult" placeholder="2">
               <button type="button" class="button_add">+</button>
@@ -128,6 +128,7 @@
             </div>
           </form>
         </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836712.0140016781!2d-112.20163313992434!3d34.99653297822955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1486764325317" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </main>
     <footer class="page_footer page_footer_index">
@@ -152,5 +153,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -137,7 +137,7 @@ img {
     position: relative;
     z-index: 2;
 }
-.active a {
+nav .active a {
     color: #766357;
 }
 /*---------------------------intro------------------------------*/
@@ -316,7 +316,6 @@ img {
     margin: 0 auto;
     margin-bottom: 24px;
     width: 160px;
-    
 }
 .cause_text p {
     font-family: "PT Sans", "Tahoma", sans-serif;
@@ -487,8 +486,14 @@ img {
     min-height: 395px;
     margin: 0 auto;
     background-color: #ffffff;
-    position: relative;
+    position: absolute;
+    left: 316px;
     box-shadow: 7px 5px 15px rgba(0, 1, 1, 0.15);
+    display: none;
+    z-index: 2;
+}
+.page_modal .modal_show {
+    display: block;
 }
 .page_modal .label {
     width: 110px;
@@ -672,6 +677,35 @@ input:-ms-input-placeholder {
     width: 100%;
     min-height: 593px;
     background: url("../img/maps.jpg") no-repeat center top;
+}
+@-webkit-keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+    animation-duration: 0.6s;
 }
 /*-------------------------------------catalog---------------------------------*/
 .hostel_type {
