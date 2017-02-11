@@ -137,7 +137,7 @@ img {
     position: relative;
     z-index: 2;
 }
-nav .active a {
+.active a {
     color: #766357;
 }
 /*---------------------------intro------------------------------*/
@@ -811,7 +811,7 @@ input:-ms-input-placeholder {
     font-size: 16px;
     line-height: 21px;
     margin: 0;
-     margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .price_controls {
     height: 32px;
