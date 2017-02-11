@@ -61,6 +61,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+iframe {
+    frameborder: 0;
+}
 /*------------------------------header---------------------------*/
 .page_header {
     min-width: 1200px;
