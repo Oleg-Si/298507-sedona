@@ -489,11 +489,10 @@ nav .active a {
     position: absolute;
     left: 316px;
     box-shadow: 7px 5px 15px rgba(0, 1, 1, 0.15);
-    display: none;
-    z-index: 2;
+    display: block;
 }
 .page_modal .modal_show {
-    display: block;
+    display: none;
 }
 .page_modal .label {
     width: 110px;
