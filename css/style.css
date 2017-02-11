@@ -718,8 +718,9 @@ input:-ms-input-placeholder {
     }
 }
 .modal_error {
+    -webkit-animation-name: shake;
     animation-name: shake;
-    animation: shake 0.6s;
+    animation-duration: 0.6s;
 }
 /*-------------------------------------catalog---------------------------------*/
 .hostel_type {
